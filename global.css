@@ -1,0 +1,8 @@
+* {
+  font-family: var(--font-family);
+}
+
+.container {
+  margin: auto;
+  width: var(--md-width);
+}
