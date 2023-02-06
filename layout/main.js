@@ -1,17 +1,19 @@
-System.register(["@beyond-js/widgets@0.1.3/render", "@beyond-js/kernel@0.1.8/bundle", "@beyond-js/react-18-widgets@0.0.3/base", "react@18.2.0"], function (_export, _context) {
+System.register(["@beyond-js/widgets@0.1.3/render", "@beyond-js/kernel@0.1.8/bundle", "@beyond-js/kernel@0.1.8/styles", "@beyond-js/react-18-widgets@0.0.3/base", "react@18.2.0"], function (_export, _context) {
   "use strict";
 
-  var dependency_0, dependency_1, dependency_2, dependency_3, bimport, __Bundle, __pkg, ims, Controller, __beyond_pkg, hmr;
+  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, bimport, __Bundle, __pkg, ims, Controller, __beyond_pkg, hmr;
   _export("Controller", void 0);
   return {
     setters: [function (_beyondJsWidgets013Render) {
       dependency_0 = _beyondJsWidgets013Render;
     }, function (_beyondJsKernel018Bundle) {
       dependency_1 = _beyondJsKernel018Bundle;
+    }, function (_beyondJsKernel018Styles) {
+      dependency_2 = _beyondJsKernel018Styles;
     }, function (_beyondJsReact18Widgets003Base) {
-      dependency_2 = _beyondJsReact18Widgets003Base;
+      dependency_3 = _beyondJsReact18Widgets003Base;
     }, function (_react) {
-      dependency_3 = _react;
+      dependency_4 = _react;
     }],
     execute: function () {
       bimport = specifier => {
@@ -28,7 +30,7 @@ System.register(["@beyond-js/widgets@0.1.3/render", "@beyond-js/kernel@0.1.8/bun
         "type": "widget"
       }, _context.meta.url).package();
       ;
-      __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/react-18-widgets/base', dependency_2], ['react', dependency_3]]);
+      __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/kernel/styles', dependency_2], ['@beyond-js/react-18-widgets/base', dependency_3], ['react', dependency_4]]);
       brequire('@beyond-js/widgets/render').widgets.register([{
         "name": "main-layout",
         "vspecifier": "@jircdev/web@0.0.1/layout/main",
@@ -103,4 +105,4 @@ System.register(["@beyond-js/widgets@0.1.3/render", "@beyond-js/kernel@0.1.8/bun
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQTtVQUNBO1VBRU87VUFBVSxNQUNYQSxVQUFXLFNBQVFDLDJCQUFxQjtZQUMxQyxJQUFJQyxNQUFNO2NBQ04sT0FBT0MsYUFBTTtZQUNqQjs7VUFDSEM7Ozs7Ozs7Ozs7Ozs7Ozs7O1VDUkQ7VUFXTSxTQUFVRCxNQUFNO1lBQ2xCLE9BQ0lFO2NBQU1DLFNBQVMsRUFBQztZQUFXLEdBQ3ZCRCxtREFBMEIsQ0FDdkI7VUFFZiIsIm5hbWVzIjpbIkNvbnRyb2xsZXIiLCJSZWFjdFdpZGdldENvbnRyb2xsZXIiLCJXaWRnZXQiLCJMYXlvdXQiLCJleHBvcnRzIiwiUmVhY3QiLCJjbGFzc05hbWUiXSwic291cmNlUm9vdCI6Ii8iLCJzb3VyY2VzIjpbInRzL2NvbnRyb2xsZXIudHMiLCJ0cy92aWV3cy9pbmRleC50c3giXSwic291cmNlc0NvbnRlbnQiOltudWxsLG51bGxdfQ==
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBO1VBQ0E7VUFFTztVQUFVLE1BQ1hBLFVBQVcsU0FBUUMsMkJBQXFCO1lBQzFDLElBQUlDLE1BQU07Y0FDTixPQUFPQyxhQUFNO1lBQ2pCOztVQUNIQzs7Ozs7Ozs7Ozs7Ozs7Ozs7VUNSRDtVQVdNLFNBQVVELE1BQU07WUFDbEIsT0FDSUU7Y0FBTUMsU0FBUyxFQUFDO1lBQVcsR0FDdkJELG1EQUEwQixDQUN2QjtVQUVmIiwibmFtZXMiOlsiQ29udHJvbGxlciIsIlJlYWN0V2lkZ2V0Q29udHJvbGxlciIsIldpZGdldCIsIkxheW91dCIsImV4cG9ydHMiLCJSZWFjdCIsImNsYXNzTmFtZSJdLCJzb3VyY2VSb290IjoiLyIsInNvdXJjZXMiOlsidHMvY29udHJvbGxlci50cyIsInRzL3ZpZXdzL2luZGV4LnRzeCJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbF19

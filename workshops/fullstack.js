@@ -1,7 +1,7 @@
-System.register(["@beyond-js/widgets@0.1.3/render", "@beyond-js/kernel@0.1.8/bundle", "@beyond-js/react-18-widgets@0.0.3/page", "react@18.2.0", "react@18.2.0/jsx-runtime"], function (_export, _context) {
+System.register(["@beyond-js/widgets@0.1.3/render", "@beyond-js/kernel@0.1.8/bundle", "@beyond-js/kernel@0.1.8/styles", "@beyond-js/react-18-widgets@0.0.3/page", "react@18.2.0", "react@18.2.0/jsx-runtime"], function (_export, _context) {
   "use strict";
 
-  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, bimport, __Bundle, __pkg, ims, Controller, View, __beyond_pkg, hmr;
+  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, bimport, __Bundle, __pkg, ims, Controller, View, __beyond_pkg, hmr;
   _export({
     Controller: void 0,
     View: void 0
@@ -11,12 +11,14 @@ System.register(["@beyond-js/widgets@0.1.3/render", "@beyond-js/kernel@0.1.8/bun
       dependency_0 = _beyondJsWidgets013Render;
     }, function (_beyondJsKernel018Bundle) {
       dependency_1 = _beyondJsKernel018Bundle;
+    }, function (_beyondJsKernel018Styles) {
+      dependency_2 = _beyondJsKernel018Styles;
     }, function (_beyondJsReact18Widgets003Page) {
-      dependency_2 = _beyondJsReact18Widgets003Page;
+      dependency_3 = _beyondJsReact18Widgets003Page;
     }, function (_react) {
-      dependency_3 = _react;
+      dependency_4 = _react;
     }, function (_react1820JsxRuntime) {
-      dependency_4 = _react1820JsxRuntime;
+      dependency_5 = _react1820JsxRuntime;
     }],
     execute: function () {
       bimport = specifier => {
@@ -33,7 +35,7 @@ System.register(["@beyond-js/widgets@0.1.3/render", "@beyond-js/kernel@0.1.8/bun
         "type": "widget"
       }, _context.meta.url).package();
       ;
-      __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/react-18-widgets/page', dependency_2], ['react', dependency_3], ['react/jsx-runtime', dependency_4]]);
+      __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/kernel/styles', dependency_2], ['@beyond-js/react-18-widgets/page', dependency_3], ['react', dependency_4], ['react/jsx-runtime', dependency_5]]);
       brequire('@beyond-js/widgets/render').widgets.register([{
         "name": "jircdev-fullstack-workshop",
         "vspecifier": "@jircdev/web@0.0.1/workshops/fullstack",
@@ -71,7 +73,7 @@ System.register(["@beyond-js/widgets@0.1.3/render", "@beyond-js/kernel@0.1.8/bun
       *****************************/
 
       ims.set('./views/index', {
-        hash: 748035987,
+        hash: 1180916814,
         creator: function (require, exports) {
           "use strict";
 
@@ -83,7 +85,7 @@ System.register(["@beyond-js/widgets@0.1.3/render", "@beyond-js/kernel@0.1.8/bun
           var _index = require("./mdx/index.mdx");
           /*bundle*/
           function View() {
-            return React.createElement(React.Fragment, null, React.createElement("h2", null, "Desarrollo fullStack con Typescript"), React.createElement(_index.default, null));
+            return React.createElement(React.Fragment, null, React.createElement("h1", null, "Desarrollo FullStack ", React.createElement("br", null), " con Typescript"), React.createElement(_index.default, null));
           }
         }
       });
@@ -93,7 +95,7 @@ System.register(["@beyond-js/widgets@0.1.3/render", "@beyond-js/kernel@0.1.8/bun
       *************************************/
 
       ims.set('./views/mdx/index.mdx', {
-        hash: 674750632,
+        hash: 1275544144,
         creator: function (require, exports) {
           "use strict";
 
@@ -108,6 +110,7 @@ System.register(["@beyond-js/widgets@0.1.3/render", "@beyond-js/kernel@0.1.8/bun
             const _components = Object.assign({
               h3: "h3",
               p: "p",
+              blockquote: "blockquote",
               ul: "ul",
               li: "li"
             }, props.components);
@@ -116,8 +119,14 @@ System.register(["@beyond-js/widgets@0.1.3/render", "@beyond-js/kernel@0.1.8/bun
                 children: "Que veremos"
               }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
                 children: "El workShop es para ti si te identificas con algunos de estos casos de uso:"
-              }), "\n", (0, _jsxRuntime.jsx)(_components.p, {
-                children: "¿Estás empezando en el mundo del desarrollo web y te sientes abrumado con todas las cosas que existen para aprender?"
+              }), "\n", (0, _jsxRuntime.jsxs)(_components.blockquote, {
+                children: ["\n", (0, _jsxRuntime.jsx)(_components.p, {
+                  children: "¿Estás empezando en el mundo del desarrollo web y te sientes abrumado con todas las cosas que existen para aprender? Este workshop te ayudará a tener un panorama\r\nclaro de todo el ecosistema actual de programación web a partir del cúal podrás definir en que especializarte con una base que te permita tener una perspectiva\r\nlo mas completa posible."
+                }), "\n"]
+              }), "\n", (0, _jsxRuntime.jsxs)(_components.blockquote, {
+                children: ["\n", (0, _jsxRuntime.jsx)(_components.p, {
+                  children: "Ya tienes cierto nivel de experiencia, pero sientes que hay muchos tópicos, terminos y librerias a tu alrededor que desconoces y no sabes\r\nsi conviene o no estudiar alguno. Este workshop tambien es para ti.\r\nSi quieres conocer una buena forma de manejar todo tu entorno integrado de desarrollo, tambien."
+                }), "\n"]
               }), "\n", (0, _jsxRuntime.jsxs)(_components.ul, {
                 children: ["\n", (0, _jsxRuntime.jsxs)(_components.li, {
                   children: ["\n", (0, _jsxRuntime.jsx)(_components.p, {
@@ -266,4 +275,4 @@ System.register(["@beyond-js/widgets@0.1.3/render", "@beyond-js/kernel@0.1.8/bun
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQTtVQUNBO1VBRU87VUFBVSxNQUNYQSxVQUFXLFNBQVFDLCtCQUF5QjtZQUM5QyxJQUFJQyxNQUFNO2NBQ04sT0FBT0MsV0FBSTtZQUNmOztVQUNIQzs7Ozs7Ozs7Ozs7Ozs7Ozs7VUNSRDtVQUNBO1VBRU87VUFBVSxTQUNSRCxJQUFJO1lBQ1QsT0FDSUUsMENBQ0lBLHNFQUE0QyxFQUM1Q0Esb0JBQUNDLGNBQVEsT0FBRyxDQUNiO1VBRVg7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OzBCQ1hJOzswQkFFSjs7MEJBRUE7Ozs7OEJBRUk7Ozs7OEJBQ0E7OztnQ0FFSTs7Z0NBQ0E7O2dDQUNBOztnQ0FDQTs7Ozs7OEJBRUo7OztnQ0FFSTs7Z0NBQ0E7O2lDQUNBOztvQ0FDSTs7b0NBQ0E7O29DQUNBOztvQ0FDQTs7OztpQ0FDSjs7b0NBQ0k7O29DQUNBOztvQ0FDQTs7b0NBRUE7Ozs7aUNBQ0o7O29DQUNJOztvQ0FDQTs7b0NBQ0E7Ozs7Ozs7OEJBRVI7OztnQ0FDSTs7Z0NBQ0E7O2dDQUNBOztnQ0FDQTs7Z0NBQ0E7O2dDQUNBOztnQ0FDQTs7Z0NBQ0E7O2dDQUNBOztnQ0FDQTs7Z0NBQ0E7O2dDQUNBOzs7OzswQkFFSjs7OzZCQUVBOztnQ0FDSTs7Ozs0QkFDSiIsIm5hbWVzIjpbIkNvbnRyb2xsZXIiLCJQYWdlUmVhY3RXaWRnZXRDb250cm9sbGVyIiwiV2lkZ2V0IiwiVmlldyIsImV4cG9ydHMiLCJSZWFjdCIsIldvcmtzaG9wIl0sInNvdXJjZVJvb3QiOiIvIiwic291cmNlcyI6WyJ3aWRnZXQvdHMvY29udHJvbGxlci50cyIsIndpZGdldC90cy92aWV3cy9pbmRleC50c3giLCJ3aWRnZXQvdHMvdmlld3MvbWR4L3ZpZXdzXFxtZHhcXGluZGV4Lm1keCJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbCxudWxsXX0=
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBO1VBQ0E7VUFFTztVQUFVLE1BQ1hBLFVBQVcsU0FBUUMsK0JBQXlCO1lBQzlDLElBQUlDLE1BQU07Y0FDTixPQUFPQyxXQUFJO1lBQ2Y7O1VBQ0hDOzs7Ozs7Ozs7Ozs7Ozs7OztVQ1JEO1VBQ0E7VUFFTztVQUFVLFNBQ1JELElBQUk7WUFDVCxPQUNJRSwwQ0FDSUEseURBQ3lCQSwrQkFBTSxvQkFDMUIsRUFDTEEsb0JBQUNDLGNBQVEsT0FBRyxDQUNiO1VBRVg7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OzswQkNiSTs7MEJBRUo7Ozs0QkFFRTs7Ozs0QkFJQTs7Ozs7OEJBSUU7Ozs7OEJBQ0E7OztnQ0FFSTs7Z0NBQ0E7O2dDQUNBOztnQ0FDQTs7Ozs7OEJBRUo7OztnQ0FFSTs7Z0NBQ0E7O2lDQUNBOztvQ0FDSTs7b0NBQ0E7O29DQUNBOztvQ0FDQTs7OztpQ0FDSjs7b0NBQ0k7O29DQUNBOztvQ0FDQTs7b0NBRUE7Ozs7aUNBQ0o7O29DQUNJOztvQ0FDQTs7b0NBQ0E7Ozs7Ozs7OEJBRVI7OztnQ0FDSTs7Z0NBQ0E7O2dDQUNBOztnQ0FDQTs7Z0NBQ0E7O2dDQUNBOztnQ0FDQTs7Z0NBQ0E7O2dDQUNBOztnQ0FDQTs7Z0NBQ0E7O2dDQUNBOzs7OzswQkFFSjs7OzZCQUVBOztnQ0FDSTs7Ozs0QkFDSiIsIm5hbWVzIjpbIkNvbnRyb2xsZXIiLCJQYWdlUmVhY3RXaWRnZXRDb250cm9sbGVyIiwiV2lkZ2V0IiwiVmlldyIsImV4cG9ydHMiLCJSZWFjdCIsIldvcmtzaG9wIl0sInNvdXJjZVJvb3QiOiIvIiwic291cmNlcyI6WyJ3aWRnZXQvdHMvY29udHJvbGxlci50cyIsIndpZGdldC90cy92aWV3cy9pbmRleC50c3giLCJ3aWRnZXQvdHMvdmlld3MvbWR4L3ZpZXdzXFxtZHhcXGluZGV4Lm1keCJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbCxudWxsXX0=

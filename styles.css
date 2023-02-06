@@ -498,7 +498,9 @@ html[data-beyond-mode=dark] primary-0 {
 html[data-beyond-mode=dark] primary-0 {
   background-color: #ff8056;
 }
-html, body {
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap");
+html,
+body {
   min-height: 100%;
   overflow-x: hidden;
   padding: 0;
