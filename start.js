@@ -37,6 +37,11 @@ System.register(["@beyond-js/kernel@0.1.8/bundle", "@beyond-js/kernel@0.1.8/tran
         "name": "main-layout",
         "vspecifier": "@jircdev/web@0.0.1/layout/main",
         "is": "layout"
+      }, {
+        "name": "jircdev-roadmap",
+        "vspecifier": "@jircdev/web@0.0.1/roadmap.widget",
+        "is": "page",
+        "route": "/roadmap"
       }]);
       bundles = [];
       __beyond_transversal.initialise(bundles);
