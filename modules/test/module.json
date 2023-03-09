@@ -1,0 +1,14 @@
+{
+    "name": "test",
+    "widget": {
+        "route": "/test",
+        "is": "page",
+        "ts": {
+            "path": "/widget/ts",
+            "files": ["*"]
+        },
+        "element": {
+            "name": "app-test"
+        }
+    }
+}

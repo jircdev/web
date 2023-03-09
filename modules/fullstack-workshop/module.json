@@ -1,0 +1,24 @@
+{
+    "name": "workshops/fullstack",
+    "description": "Fullstack workshop with TypesScript, Microfrontends and microservices and agnostic tools.",
+    "widget": {
+        "route": "/workshops/fullstack",
+        "is": "page",
+        "sass": {
+            "path": "/widget/sass",
+            "files": ["*"]
+        },
+        "ts": {
+            "path": "/widget/ts",
+            "files": ["*"]
+        },
+
+        "mdx": {
+            "path": "/widget/ts",
+            "files": ["*"]
+        },
+        "element": {
+            "name": "jircdev-fullstack-workshop"
+        }
+    }
+}

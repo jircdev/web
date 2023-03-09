@@ -1,0 +1,40 @@
+@mixin position-absolute {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.page__container {
+    display: flex;
+    padding: 20px;
+    max-width: 1024px;
+    margin: 20px auto;
+    flex-direction: row;
+    background: var(--surface);
+    flex-direction: column;
+}
+
+img {
+    border-radius: 1rem;
+    max-width: 500px;
+}
+
+figure {
+    position: relative;
+
+    &:hover figcaption {
+        opacity: 1;
+        background: rgba(245, 245, 245, 0.5);
+    }
+    figcaption {
+        @include position-absolute;
+        width: 100%;
+        display: grid;
+        place-items: center;
+        max-width: 500px;
+        opacity: 0;
+        transition: all 300ms ease-in;
+        border-radius: 1rem;
+    }
+}

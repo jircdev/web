@@ -1,0 +1,28 @@
+{
+    "name": "roadmap",
+    "description": "Roadmap about how learning javascript",
+    "txt": {
+        "path": "txt",
+        "files": "*"
+    },
+    "widget": {
+        "route": "/roadmap",
+        "is": "page",
+        "sass": {
+            "path": "/widget/sass",
+            "files": ["*"]
+        },
+        "ts": {
+            "path": "/widget/ts",
+            "files": ["*"]
+        },
+
+        "mdx": {
+            "path": "/widget/ts",
+            "files": ["*"]
+        },
+        "element": {
+            "name": "jircdev-roadmap"
+        }
+    }
+}
